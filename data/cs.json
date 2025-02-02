@@ -1,0 +1,9 @@
+{
+    "major": "Computer Science",
+    "courses": [
+      { "id": "1", "name": "CSE 1010", "x": 250, "y": 0 },
+      { "id": "2", "name": "CSE 2050", "x": 250, "y": 100, "prereqs": ["1"] },
+      { "id": "3", "name": "CSE 2100", "x": 250, "y": 200, "prereqs": ["2"] }
+    ]
+  }
+  
