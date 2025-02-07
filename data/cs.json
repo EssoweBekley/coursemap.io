@@ -1,9 +1,205 @@
 {
-    "major": "Computer Science",
-    "courses": [
-      { "id": "1", "name": "CSE 1010", "x": 250, "y": 0 },
-      { "id": "2", "name": "CSE 2050", "x": 250, "y": 100, "prereqs": ["1"] },
-      { "id": "3", "name": "CSE 2100", "x": 250, "y": 200, "prereqs": ["2"] }
-    ]
-  }
-  
+  "major": "Computer Science and Engineering",
+  "courses": [
+    {
+      "id": "1",
+      "name": "CSE 1010",
+      "title": "Introduction to Computing for Engineers",
+      "x": 250,
+      "y": 0,
+      "credits": 3,
+      "description": "Introduction to computing logic, algorithmic thinking, computing processes, a programming language and computing environment. Knowledge obtained in this course enables use of the computer as an instrument to solve computing problems. Representative problems from science, mathematics, and engineering will be solved.",
+      "prereqs": []
+    },
+    {
+      "id": "2",
+      "name": "CSE 1729",
+      "title": "Introduction to Principles of Programming", 
+      "x": 150,
+      "y": 100,
+      "credits": 3,
+      "description": "Introduction to computer programming in a structured programming language including fundamental elements of program design and analysis. Data and functional abstraction as tools for constructing correct, efficient, and intelligible programs for a variety of common computing problems.",
+      "prereqs": ["1"]
+    },
+    {
+      "id": "3",
+      "name": "CSE 2050",
+      "title": "Data Structures and Object-Oriented Design",
+      "x": 350,
+      "y": 100,
+      "credits": 3,
+      "description": "Introduction to fundamental data structures and algorithms. The emphasis is on understanding how to efficiently implement different data structures, communicate clearly about design decisions, and understand the relationships among implementations, design decisions, and the four pillars of object-oriented programming: abstraction, encapsulation, inheritance, and polymorphism.",
+      "prereqs": ["1", "2"]
+    },
+    {
+      "id": "4",
+      "name": "CSE 2102",
+      "title": "Introduction to Software Engineering",
+      "x": 250,
+      "y": 200,
+      "credits": 3,
+      "description": "Software engineering concepts including the software life cycle and other software-development process models. Specification techniques, design methodologies, performance analysis, and verification techniques. Team-oriented software design and development, and project management techniques. Use of appropriate design and debugging tools for a modern programming language. Homework and laboratory projects that emphasize design and the use/features of a modern programming language.",
+      "prereqs": ["3"]
+    },
+    {
+      "id": "5",
+      "name": "CSE 2193",
+      "title": "International Study",
+      "x": 150,
+      "y": 300,
+      "credits": "1-6",
+      "description": "Special Computer Science and Engineering topics taken in an international study program. May count toward the major with consent of the advisor and approved plan of study. May be repeated for a total of 6 credits.",
+      "prereqs": []
+    },
+    {
+      "id": "6",
+      "name": "CSE 2301",
+      "title": "Principles and Practice of Digital Logic Design",
+      "x": 350,
+      "y": 300,
+      "credits": 4,
+      "description": "Representation of digital information. Analysis, design, and evaluation of combinational and sequential logic circuits. Debugging techniques. Use of computer facilities for circuit simulation, CAD, and report preparation and presentation. Introduction to structure and operation of digital computers. Design projects. Written reports with revisions are required for each project.",
+      "prereqs": ["1"]
+    },
+    {
+      "id": "7",
+      "name": "CSE 2500",
+      "title": "Data Structures and Object-Oriented Design",
+      "x": 250,
+      "y": 400,
+      "credits": 3,
+      "description": "Introduction to formal mathematical thinking including discrete systems and proofs. Discrete system topics include logic, set theory, basic number theory, basic combinatorics, functions, relations, sequences, sums, products, recurrence, and countability. Proof topics include direct proof, including proof by cases and induction, and indirect proof, including proof by contrapositive and contradiction.",
+      "prereqs": ["2"]
+    },
+    {
+      "id": "8",
+      "name": "CSE 2550",
+      "title": "Blockchain Technology I",
+      "x": 150,
+      "y": 500,
+      "credits": 3,
+      "description": "Introduction to the basics of blockchain technology. The course will cover the semantics of blockchains, cryptocurrencies, types of blockchains and consensus algorithms, wallet operation, privacy, threat modeling and security aspects of blockchains and cryptocurrencies, the paradigm of decentralized internet, and some ethical and environmental concerns from a technical lens.",
+      "prereqs": ["3"]
+    },
+    {
+      "id": "9",
+      "name": "CSE 2600",
+      "title": "Introduction to Data Science and Engineering",
+      "x": 350,
+      "y": 500,
+      "credits": 3,
+      "description": "Introduction to a broad selection of challenges and methodologies in working with big data. Topics to be covered include fundamental data science lifecycle topics such as data acquisition, management, integration, visualization, modeling, analysis, prediction, as well as data security, data privacy and ethics.",
+      "prereqs": ["3"]
+    },
+    {
+      "id": "10",
+      "name": "CSE 3000",
+      "title": "Contemporary Issues in Computer Science and Engineering",
+      "x": 250,
+      "y": 600,
+      "credits": 1,
+      "description": "Information management, the global and societal impact of computer science and engineering decisions, professional and ethical responsibility.",
+      "prereqs": ["4"]
+    },
+    {
+      "id": "11",
+      "name": "CSE 3100",
+      "title": "Systems Programming",
+      "x": 150,
+      "y": 700,
+      "credits": 3,
+      "description": "Introduction to system-level programming with an emphasis on C programming, process management and small scale concurrency with multi-threaded programming. Special attention will be devoted to proficiency with memory management and debugging facilities both in a sequential and parallel setting.",
+      "prereqs": ["6"]
+    },
+    {
+      "id": "12",
+      "name": "CSE 3140",
+      "title": "Cybersecurity Lab",
+      "x": 350,
+      "y": 700,
+      "credits": 2,
+      "description": "Introduction to the design of secure systems. Explores issues that arise in multiple design phases to understand the limitations of the platform and the source of opportunities for attackers. Each unit will explore a system, its design, its vulnerabilities and how to exploit them, culminating with the creation, implementation and deployment of counter-measures to eliminate the vulnerabilities and nullify the threat.",
+      "prereqs": ["3"]
+    },
+    {
+      "id": "13",
+      "name": "CSE 3150",
+      "title": "C++ Essentials",
+      "x": 250,
+      "y": 800,
+      "credits": 3,
+      "description": "Leverages existing knowledge of C and covers all the essential capabilities of the most recent C++ standard, illustrating their specificities as well as how the language can be used to model object-oriented implementation of a number of classic problems.",
+      "prereqs": ["11"]
+    },
+    {
+      "id": "14",
+      "name": "CSE 3160",
+      "title": "Functional Programming Fundamentals",
+      "x": 350,
+      "y": 800,
+      "credits": 3,
+      "description": "The course covers fundamental techniques in functional programming. While the primary focus is purely functional programming, side effects are explored for various purposes such as modeling I/O and rendering stateful objects. The course introduces elementary types, control flow, environments and scoping, closures, and other structural features of typical functional programs.",
+      "prereqs": ["11"]
+    },
+    {
+      "id": "15",
+      "name": "CSE 3193",
+      "title": "International Study",
+      "x": 150,
+      "y": 900,
+      "credits": "1-6",
+      "description": "Consent of the department head or undergraduate coordinator required, normally before the student's departure. May count toward the major with consent of the advisor and either the department head or undergraduate coordinator. May be repeated for a total of 6 credits.",
+      "prereqs": []
+    },
+    {
+      "id": "16",
+      "name": "CSE 3200",
+      "title": "Mobile Application Development",
+      "x": 250,
+      "y": 900,
+      "credits": 3,
+      "description": "Introduction to mobile application development. Its focus is on Android native development. Android Development is done using Java. The central objective is to develop students’ problem-solving skills for mobile app development.",
+      "prereqs": ["4", "11"]
+    },
+    {
+      "id": "17",
+      "name": "CSE 3250",
+      "title": "Introduction to Cloud Computing",
+      "x": 350,
+      "y": 900,
+      "credits": 3,
+      "description": "Introduction to the design and implementation of applications that take full advantage of the cloud-delivery model. Lectures will be a mix between topics, discussion, and in-class demonstrations. Weekly hands-on coding assignments will be given utilizing a modern cloud platform.",
+      "prereqs": ["3"]
+    },
+    {
+      "id": "18",
+      "name": "CSE 3300",
+      "title": "Computer Networks and Data Communication",
+      "x": 150,
+      "y": 1000,
+      "credits": 3,
+      "description": "Introduction to computer networks and data communications. Network types, components and topology, protocol architecture, routing algorithms, and performance. Case studies including LAN and other architectures.",
+      "prereqs": ["11"]
+    },
+    {
+      "id": "19",
+      "name": "CSE 3302",
+      "title": "Digital Systems Design",
+      "x": 250,
+      "y": 1000,
+      "credits": 3,
+      "description": "Design and evaluation of control and data structures for digital systems. Hardware design languages are used to describe and design alternative register transfer level architectures and control units with a micro-programming emphasis.",
+      "prereqs": ["6"]
+    },
+    {
+      "id": "20",
+      "name": "CSE 3350",
+      "title": "Digital Design Laboratory",
+      "x": 350,
+      "y": 1000,
+      "credits": 3,
+      "description": "Digital designing with PLA and FPGA, A/D and D/A conversion, floating point processing, ALU design, synchronous and asynchronous controllers, control path; bus master; bus slave; memory interface; I/O interface; logic circuits analysis, testing, and trouble shooting; PCB; design and manufacturing.",
+      "prereqs": ["19"]
+    }
+  ]
+}
