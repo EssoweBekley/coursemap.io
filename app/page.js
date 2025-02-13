@@ -1,4 +1,7 @@
 export default function Home() {
+  
+  // This is the home page for this app
+  
   return (
     <main>
       <nav className="bg-gray-800 p-4">
