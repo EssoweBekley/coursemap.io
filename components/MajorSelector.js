@@ -13,7 +13,7 @@ export default function MajorSelector() {
 
   return (
     <div className="flex flex-col items-center mt-8">
-      <label className="text-lg font-semibold mb-2">Select Your School:</label>
+      <label className="text-lg font-semibold mb-2">Select Your Major:</label>
       <select
         onChange={handleSelect}
         defaultValue=""
