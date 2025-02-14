@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-white text-lg font-bold">coursemap.io</h1>
+        <h1><a href = "/" className="text-white text-lg font-bold">coursemap.io</a></h1>
         <ul className="flex space-x-4">
           <li><a href="/" className="text-white hover:text-gray-300">Home</a></li>
           <li><a href="/coursemaps" className="text-white hover:text-gray-300">CourseMaps</a></li>

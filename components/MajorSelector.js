@@ -12,12 +12,18 @@ export default function MajorSelector() {
   };
 
   return (
-    <div>
-      <label>Select Your Major:</label>
-      <select onChange={handleSelect} defaultValue="">
-        <option value="" disabled>Select a major</option>
-        <option value="cs">Computer Science</option>
-        <option value="me">Mechanical Engineering</option>
+    <div className="flex flex-col items-center mt-8">
+      <label className="text-lg font-semibold mb-2">Select Your School:</label>
+      <select
+        onChange={handleSelect}
+        defaultValue=""
+        className="p-2 border border-gray-300 rounded-md text-black"
+      >
+        <option value="" disabled className="text-black">
+          Select a major
+        </option>
+        <option value="cs" className="text-black">Computer Science</option>
+        <option value="me" className="text-black">Mechanical Engineering</option>
       </select>
     </div>
   );
