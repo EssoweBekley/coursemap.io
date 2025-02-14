@@ -41,8 +41,11 @@ export default async function CoursePage() {
   return (
     <div>
       <NavBar />
-      <h1>{courseData.major} Course Map</h1>
-      <CourseFlow courses={courseData.courses} />
+
+      <section className="text-center mt-8">
+        <h1>{courseData.major} Course Map</h1>
+        <CourseFlow courses={courseData.courses} />
+      </section>
     </div>
   );
 }
