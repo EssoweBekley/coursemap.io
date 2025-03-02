@@ -25,7 +25,6 @@ export default function MajorSelector() {
         const schoolName = event.target.value;
         setSelectedSchool(schoolName);
 
-        // Find the corresponding majors and update state
         const school = schools.find(s => s.school === schoolName);
         setMajors(school ? school.majors : []);
     };
