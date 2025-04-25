@@ -1,0 +1,12 @@
+{
+  "catalog_url":"https://catalog.uconn.edu/",
+  "subject_search_url":"https://catalog.uconn.edu/undergraduate/courses/{course_code}/",
+  "school_selector":".school-list a",
+  "major_selector":".major-list a",
+  "course_selector":".courseblocktitle a",
+  "title_selector":".courseblocktitle",
+  "description_selector":".courseblockdesc",
+  "prereq_selector":".prereqs",
+  "pagination_selector":"a.next",
+  "requires_js":false
+}
