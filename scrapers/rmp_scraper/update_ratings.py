@@ -14,7 +14,7 @@ def get_professor_page(rmp_id):
     response = requests.get(full_url, headers=headers, timeout=10)
     if response.status_code == 200:
         return response.text, full_url
-    print(f"❌ Failed to fetch page. Status code: {response.status_code}")
+    print(f"Failed to fetch page. Status code: {response.status_code}")
     return None, None
 
 def extract_rating(soup):
@@ -52,7 +52,7 @@ def update_professor_rating(professor_name, school_name):
                 }
             }
 
-            # Only unset manual_search if it exists
+            # unset manual_search if it exists
             if "manual_search" in professor:
                 update_query["$unset"] = {"manual_search": ""}
 
