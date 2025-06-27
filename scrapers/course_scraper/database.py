@@ -1,11 +1,10 @@
-# database.py
 import json
 import os
 from dotenv import load_dotenv
 from pymongo import MongoClient, errors
 from pymongo.server_api import ServerApi
 
-database_name = "University_of_Connecticut" # Default database name\
+database_name = "University_of_Connecticut" # database name for uconn\
 
 load_dotenv()
 URI = os.getenv("MONGODB_URI")

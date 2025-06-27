@@ -45,3 +45,10 @@ scrapers/venv/
 scrapers/.env
 scrapers/.env.local
 scrapers/**/__pycache__/
+scrapers/course_scraper/output
+# scrapers2.0
+scrapers2.0/venv/
+scrapers2.0/.env
+scrapers2.0/.env.local
+scrapers2.0/**/__pycache__/
+scrapers2.0/course_scraper/

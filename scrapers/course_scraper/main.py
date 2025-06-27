@@ -57,7 +57,7 @@ if __name__ == "__main__":
                     # delete the JSON file after successful insertion (comment to keep the JSON file)
                     if os.path.exists(output_json_file):
                        try:
-                           os.remove(output_json_file)
+                        #    os.remove(output_json_file)
                            print(f"Temporary JSON file {output_json_file} deleted.")
                        except OSError as e:
                            print(f"Error deleting JSON file {output_json_file}: {e}")
