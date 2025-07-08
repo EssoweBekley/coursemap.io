@@ -1,5 +1,4 @@
-import clientPromise from "@/backend/lib/mongodb"; // Ensure the correct path
-
+import clientPromise from "@/backend/lib/mongodb";
 export default async function handler(req, res) {
     try {
         const { school, major } = req.query; // Get parameters from URL
@@ -9,7 +8,7 @@ export default async function handler(req, res) {
         }
 
         const client = await clientPromise;
-        const db = client.db(school); // Dynamically select the school database
+        const db = client.db(school); // select the school database
         const collection = db.collection(major); // Dynamically select the major collection
 
         const courses = await collection.find({}).toArray(); // Fetch courses from the major collection

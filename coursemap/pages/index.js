@@ -11,6 +11,7 @@ export default function Page() {
                 Welcome to CourseMap.io!
             </h1>
             <MajorSelector />
+            <button> Create your own CourseMap</button>
         </div>
     )
 }

@@ -1,4 +1,3 @@
-// components/Courseflow/index.js
 import React, { useState, useEffect } from 'react';
 import ReactFlow, { Background } from 'reactflow';
 import dagre from 'dagre';
@@ -46,13 +45,13 @@ export default function CourseFlow({ courses }) {
         });
 
         const newEdges = courses.flatMap(course =>
-            course.prereqs.map(prereq => ({
+            (course.prereqs || []).map(prereq => ({
                 id: `e${prereq}-${course._id}`,
                 source: prereq,
                 target: course._id,
-                type: 'loose', // Pass the edge type here
+                type: 'loose',
             }))
-        );
+         );
 
         setNodes(newNodes);
         setEdges(newEdges);
