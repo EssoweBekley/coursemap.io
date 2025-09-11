@@ -1,7 +1,13 @@
 import Navbar from "@/components/Navbar";
 import MajorSelector from "@/components/Selector";
+import { useRouter } from 'next/router';
 
 export default function Page() {
+    const router = useRouter();
+
+    const handleCreate = () => {
+        router.push('/createmap');
+    }
     return (
 
         // NavBar import
@@ -11,7 +17,7 @@ export default function Page() {
                 Welcome to CourseMap.io!
             </h1>
             <MajorSelector />
-            <button> Create your own CourseMap</button>
+            <button onClick={handleCreate}> Create your own CourseMap</button>
         </div>
     )
 }

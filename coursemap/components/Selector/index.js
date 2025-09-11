@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 
 export default function MajorSelector() {
     const router = useRouter();
@@ -48,7 +48,7 @@ export default function MajorSelector() {
                 className="p-2 border border-gray-300 rounded-md text-black mb-4"
             >
                 <option value="" disabled>Select a school</option>
-                {schools.map((school) => (
+            {Array.isArray(schools) && schools.map((school) => (
                     <option key={school.school} value={school.school}>
                         {school.school}
                     </option>
