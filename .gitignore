@@ -1,0 +1,52 @@
+# dependencies
+coursemap/node_modules
+coursemap/.pnp
+coursemap/.pnp.*
+coursemap/.yarn/*
+!coursemap/.yarn/patches
+!coursemap/.yarn/plugins
+!coursemap/.yarn/releases
+!coursemap/.yarn/versions
+
+# testing
+coursemap/coverage
+
+# next.js
+coursemap/.next/
+coursemap/out/
+
+# production
+coursemap/build
+
+# misc
+coursemap/.DS_Store
+coursemap/*.pem
+
+# debug
+coursemap/npm-debug.log*
+coursemap/yarn-debug.log*
+coursemap/yarn-error.log*
+coursemap/.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+coursemap/.env*
+
+# vercel
+coursemap/.vercel
+
+# typescript
+coursemap/*.tsbuildinfo
+coursemap/next-env.d.ts
+
+# scrapers
+scrapers/venv/
+scrapers/.env
+scrapers/.env.local
+scrapers/**/__pycache__/
+scrapers/course_scraper/output
+# scrapers2.0
+scrapers2.0/venv/
+scrapers2.0/.env
+scrapers2.0/.env.local
+scrapers2.0/**/__pycache__/
+scrapers2.0/course_scraper/
