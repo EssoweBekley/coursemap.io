@@ -1,0 +1,157 @@
+{
+  "major": "Mechanical Engineering",
+  "courses": [
+    { 
+      "id": "1", 
+      "name": "ENGR 1000", 
+      "x": 250, 
+      "y": 0, 
+      "credits": 3, 
+      "description": "Introduction to Engineering" 
+    },
+    { 
+      "id": "2", 
+      "name": "MATH 1131", 
+      "x": 150, 
+      "y": 100, 
+      "prereqs": ["1"], 
+      "credits": 3, 
+      "description": "Calculus I" 
+    },
+    { 
+      "id": "3", 
+      "name": "PHYS 1501", 
+      "x": 350, 
+      "y": 100, 
+      "prereqs": ["1"],
+      "credits": 4, 
+      "description": "Physics for Engineers I"
+    },
+    { 
+      "id": "4", 
+      "name": "MATH 1132", 
+      "x": 150, 
+      "y": 200, 
+      "prereqs": ["2"], 
+      "credits": 3, 
+      "description": "Calculus II" 
+    },
+    { 
+      "id": "5", 
+      "name": "PHYS 1502", 
+      "x": 350, 
+      "y": 200, 
+      "prereqs": ["3"], 
+      "credits": 4, 
+      "description": "Physics for Engineers II"
+    },
+    { 
+      "id": "6", 
+      "name": "ME 2233", 
+      "x": 250, 
+      "y": 300, 
+      "prereqs": ["4", "5"], 
+      "credits": 3, 
+      "description": "Thermodynamics I" 
+    },
+    { 
+      "id": "7", 
+      "name": "ME 3250", 
+      "x": 250, 
+      "y": 400, 
+      "prereqs": ["6"], 
+      "credits": 3, 
+      "description": "Fluid Mechanics"
+    },
+    { 
+      "id": "8", 
+      "name": "ME 3260", 
+      "x": 150, 
+      "y": 500, 
+      "prereqs": ["7"], 
+      "credits": 3, 
+      "description": "Heat Transfer"
+    },
+    { 
+      "id": "9", 
+      "name": "ME 4972W", 
+      "x": 350, 
+      "y": 500, 
+      "prereqs": ["7"], 
+      "credits": 3, 
+      "description": "Capstone Design Project"
+    },
+    { 
+      "id": "10", 
+      "name": "ENGR 1001", 
+      "x": 100, 
+      "y": 600, 
+      "prereqs": [], 
+      "credits": 3, 
+      "description": "Introduction to Engineering Design"
+    },
+    { 
+      "id": "11", 
+      "name": "MATH 1141", 
+      "x": 200, 
+      "y": 600, 
+      "prereqs": ["2"], 
+      "credits": 3, 
+      "description": "Calculus III"
+    },
+    { 
+      "id": "12", 
+      "name": "PHYS 1601", 
+      "x": 300, 
+      "y": 600, 
+      "prereqs": ["3"], 
+      "credits": 4, 
+      "description": "Modern Physics"
+    },
+    { 
+      "id": "13", 
+      "name": "ME 1010", 
+      "x": 400, 
+      "y": 600, 
+      "prereqs": ["6"], 
+      "credits": 3, 
+      "description": "Introduction to Mechanical Engineering"
+    },
+    { 
+      "id": "14", 
+      "name": "ME 2110", 
+      "x": 150, 
+      "y": 700, 
+      "prereqs": ["13"], 
+      "credits": 3, 
+      "description": "Statics"
+    },
+    { 
+      "id": "15", 
+      "name": "ME 2120", 
+      "x": 250, 
+      "y": 700, 
+      "prereqs": ["14"], 
+      "credits": 3, 
+      "description": "Dynamics of Machines"
+    },
+    { 
+      "id": "16", 
+      "name": "MATH 2130", 
+      "x": 350, 
+      "y": 700, 
+      "prereqs": ["11"], 
+      "credits": 3, 
+      "description": "Differential Equations"
+    },
+    { 
+      "id": "17", 
+      "name": "ME 3230", 
+      "x": 450, 
+      "y": 700, 
+      "prereqs": ["12", "15"], 
+      "credits": 3, 
+      "description": "Mechanics of Materials"
+    }
+  ]
+}
